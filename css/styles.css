@@ -23,8 +23,8 @@ p{
 }
 
 .p-text{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: .5rem;
+    margin-right: 1.5rem;
     text-align: justify;
     color: #1e2525;
 }
