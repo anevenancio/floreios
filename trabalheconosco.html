@@ -1,233 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.svg" type="image/x-icon" sizes="16x16"/>
-
-  <title>Floreios | por uma vida mais leve</title>
-</head>
-<body>
-  <div class="d-flex flex-column wrapper">
-    <!--INICIO FRETE-->
-    <nav class="navbar navbar-expand-lg nav1">
-      <div class="container text-center justify-content-center" style="height: 15px;">
-        <div class="row align-items-center">
-          <div class="col" style="font-size: 12px; color: white;">
-            <i class="bi bi-stars me-2"></i>Frete grátis em pedidos acima de R$ 99,90<i class="bi bi-stars ms-2"></i>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--FIM FRETE-->
-
-    <!--INICIO LOGO-->
-    <nav class="navbar navbar-expand-lg nav2">
-      <div class="container text-center justify-content-center">
-        <div class="row align-items-center">
-          <div class="col my-3">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="img-fluid" alt="logo escrito floreios"></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--FIM LOGO-->
-    
-    <!--MENU-->
-    <nav class="navbar navbar-expand-lg py-2 mb-1 shadow-sm nav3">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  nav-justified  flex-grow-1">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quemsomos.html">Quem Somos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="loja.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Loja
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="bemestar.html">Bem-Estar</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="skincare.html">Skin Care</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="lifestyle.html">Lifestyle</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="loja.html">Ver todos</a></li>
-              </ul>
-            </li>
-            <!--icones-->
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Minha Conta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="carrinho.html">Carrinho</a>
-            </li>
-            <div>
-              <!--caixa de busca-->
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
-                <button class="btn" type="submit" id="pesquisar"><i class="bi bi-search-heart"></i></button>
-              </form>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.svg" type="image/x-icon" sizes="16x16"/>
+  
+    <title>Floreios | por uma vida mais leve</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column wrapper">
+      <!--INICIO FRETE-->
+      <nav class="navbar navbar-expand-lg nav1">
+        <div class="container text-center justify-content-center" style="height: 15px;">
+          <div class="row align-items-center">
+            <div class="col" style="font-size: 12px; color: white;">
+              <i class="bi bi-stars me-2"></i>Frete grátis em pedidos acima de R$ 99,90<i class="bi bi-stars ms-2"></i>
             </div>
-          </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!--FIM MENU-->
-
-    <!--Corpo do Site -->
-    <main class="flex-fill">
-      <div class="container">
-
-        <!-- TRABALHE CONOSCO -->
-
-        <!-- FORMULÁRIO DE CONTATO-->
-        <section class="forms">
-          <div class="container">
-            <h1 class="text-center mb-5 mt-5 h1-title">Faça Parte da Equipe</h1> 
-            <p class="lead mb-5 p-text">
-              Somos uma empresa dedicada a oferecer aos nossos clientes produtos de alta qualidade,
-              feitos com ingredientes naturais e orgânicos, livres de substâncias químicas nocivas.
-              Acreditamos que a beleza não deve vir a qualquer custo, e é por isso que estamos comprometidos
-              em fornecer soluções de cuidados com a pele e estilo de vida que sejam saudáveis e sustentáveis.
-              <br>
-              <br>
-              Se você compartilha de nossa visão e valores, estamos ansiosos para conhecer você e explorar as
-              oportunidades de trabalharmos juntos. Venha fazer parte da nossa equipe e ajudar a fazer a diferença
-              no mundo!
-            </p>
-            <div class="row align-items-center justify-content-center">
-              <div class="col-12 col-lg-6" style="display: inline-block;">
-                <!--Início - Dados Pessoais-->
-                <div class="mb-3">
-                  <label class="form-label">Nome Completo *</label>
-                  <input type="text" class="form-control" name="nomecompleto"  placeholder="digite seu nome completo" autofocus required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Caso você tenha um nome social, como devemos te chamar?</label>
-                  <input type="text" class="form-control" name="nomeSocial"  placeholder="digite seu nome social">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">E-mail *</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Telefone *</label>
-                  <input type="tel" class="form-control" name="telefone" placeholder="(XX) XXXX-XXXX" required>
-                </div>
-                <!--Fim - Dados Pessoais-->
-                
-                <!--Início - Área de Interresse-->
-                <div class="mb-3">
-                  <label class="form-label">Para qual tipo de vaga você deseja se candidatar?</label>
-                  <select class="form-select" required>
-                    <option selected>Banco de Talentos</option>
-                    <option value="estagio">Estágio</option>
-                    <option value="socialMedia">Social Media</option>
-                    <option value="assistenteAnalista">Assistente/Analista</option>
-                    <option value="outra">Outra</option>
-                  </select>
-                </div>
+      </nav>
+      <!--FIM FRETE-->
+  
+      <!--INICIO LOGO-->
+      <nav class="navbar navbar-expand-lg nav2">
+        <div class="container text-center justify-content-center">
+          <div class="row align-items-center">
+            <div class="col my-3">
+              <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="img-fluid" alt="logo escrito floreios"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--FIM LOGO-->
       
-                <div class="mb-3">
-                    <label class="form-label">Qual a sua área de interesse?</label>
-                    <select class="form-select">
-                      <option selected>Marketing/Comunicação</option>
-                      <option value="pesquisa">Pesquisa e desenvolvimento</option>
-                      <option value="tecnologia">Tecnologia</option>
-                      <option value="comercial">Comercial</option>
-                      <option value="financeiro">Financeiro</option>
-                    </select>
-                </div>
-                <!--Fim - Área de Interresse-->
-
-                <!--Início - Informações extras-->
-                <div class="mb-3">
-                  <label for="formFile" class="form-label">Adicionar currículo *</label>
-                  <input class="form-control" type="file" id="formFile" required>
-                </div>
-                <!--Fim - Informações extras-->
-                
-                <!-- Início - Botão de envio-->
-                <button type="reset" onclick="window.location.href='/confirmcontato.html'" class="btn btn-sucess mb-3">Limpar</button>
-                <button type="submit" onclick="window.location.href='/confirmcontato.html'" class="btn btn-outline-dark mb-3">Submeter candidatura</button>
-                <!-- Fim - Botão de envio-->
-
+      <!--MENU-->
+      <nav class="navbar navbar-expand-lg py-2 mb-1 shadow-sm nav3">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  nav-justified  flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://anevenancio.github.io/floreios/quemsomos.html">Quem Somos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://anevenancio.github.io/floreios/loja.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Loja
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/bemestar.html">Bem-Estar</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/skincare.html">Skin Care</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/lifestyle.html">Lifestyle</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/loja.html">Ver todos</a></li>
+                </ul>
+              </li>
+              <!--icones-->
+              <li class="nav-item">
+                <a class="nav-link" href="https://anevenancio.github.io/floreios/login.html">Minha Conta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://anevenancio.github.io/floreios/carrinho.html">Carrinho</a>
+              </li>
+              <div>
+                <!--caixa de busca-->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
+                  <button class="btn" type="submit" id="pesquisar"><i class="bi bi-search-heart"></i></button>
+                </form>
               </div>
-              <div class="col-12 col-md-4 img-forms">
-                <figure class="figure">
-                  <img src="img/equipe/1.png" class="figure-img rounded d-none d-lg-block w-100" style="display: inline-block;" alt="...">
-                </figure>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- FIM TRABALHE CONOSCO -->
-          
-      </div>
-  </main>
-  
-    <!--FOOTER -->
-    <footer class="border-top text-light">
-      <div class="container">
-        <div class="row py-3">
-          <div class="col-12 col-md-4 text-center mb-2">
-            &copy; 2023 - Floreios Ltda <br>
-            Avenida das Flores, 111, Jardim Cuiabá <br>
-            Cuiabá/Mato Grosso <br>
-            CPNJ 99.999.999/0001-99
-          </div>
-          <div class="col-12 col-md-4 text-center mb-2">
-            <a href="privacidade.html" class="text-decoration-none text-light">
-              Política de Privacidade
-            </a><br>
-            <a href="termos.html" class="text-decoration-none  text-light">
-              Termos e Condições
-            </a><br>
-            <a href="trabalheconosco.html" class="text-decoration-none text-light">
-              Trabalhe Conosco
-            </a><br>
-            <a href="trocas.html" class="text-decoration-none text-light">
-              Trocas e Devoluções
-            </a>
-          </div>
-          <div class="col-12 col-md-4 text-center">
-            <a href="contato.html" class="text-decoration-none text-light">
-            <i class="bi bi-laptop"></i> Contato pelo Site
-            </a><br>
-            <i class="bi bi-envelope"></i> E-mail: <a href="mailto:oi@floreios.com.br" class="text-decoration-none text-light">oi@floreios.com.br</a><br>
-            <i class="bi bi-whatsapp"></i> Telefone: <a href="phone:28999990000" class="text-decoration-none text-light">(65) 99999-0000</a><br>
-            <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-decoration-none text-light"><i class="bi bi-tiktok"></i></a>
-            <a href="#" class="text-decoration-none text-light"><i class="bi bi-pinterest"></i></a>
-            <a href="#" class="text-decoration-none text-light"><i class="bi bi-facebook"></i></a>
+            </ul>
           </div>
         </div>
-      </div>
-    </footer>
-    <!--FIM FOOTER -->
-  </div>
-
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      </nav>
+      <!--FIM MENU-->
   
-</body>
+      <!--Corpo do Site -->
+      <main class="flex-fill">
+        <div class="container">
+  
+          <!-- TRABALHE CONOSCO -->
+  
+          <!-- FORMULÁRIO DE CONTATO-->
+          <section class="forms">
+            <div class="container">
+              <h1 class="text-center mb-5 mt-5 h1-title">Faça Parte da Equipe</h1> 
+              <p class="lead mb-5 p-text">
+                Somos uma empresa dedicada a oferecer aos nossos clientes produtos de alta qualidade,
+                feitos com ingredientes naturais e orgânicos, livres de substâncias químicas nocivas.
+                Acreditamos que a beleza não deve vir a qualquer custo, e é por isso que estamos comprometidos
+                em fornecer soluções de cuidados com a pele e estilo de vida que sejam saudáveis e sustentáveis.
+                <br>
+                <br>
+                Se você compartilha de nossa visão e valores, estamos ansiosos para conhecer você e explorar as
+                oportunidades de trabalharmos juntos. Venha fazer parte da nossa equipe e ajudar a fazer a diferença
+                no mundo!
+              </p>
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-lg-6" style="display: inline-block;">
+                  <!--Início - Dados Pessoais-->
+                  <div class="mb-3">
+                    <label class="form-label">Nome Completo *</label>
+                    <input type="text" class="form-control" name="nomecompleto"  placeholder="digite seu nome completo" autofocus required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Caso você tenha um nome social, como devemos te chamar?</label>
+                    <input type="text" class="form-control" name="nomeSocial"  placeholder="digite seu nome social">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">E-mail *</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Telefone *</label>
+                    <input type="tel" class="form-control" name="telefone" placeholder="(XX) XXXX-XXXX" required>
+                  </div>
+                  <!--Fim - Dados Pessoais-->
+                  
+                  <!--Início - Área de Interresse-->
+                  <div class="mb-3">
+                    <label class="form-label">Para qual tipo de vaga você deseja se candidatar?</label>
+                    <select class="form-select" required>
+                      <option selected>Banco de Talentos</option>
+                      <option value="estagio">Estágio</option>
+                      <option value="socialMedia">Social Media</option>
+                      <option value="assistenteAnalista">Assistente/Analista</option>
+                      <option value="outra">Outra</option>
+                    </select>
+                  </div>
+        
+                  <div class="mb-3">
+                      <label class="form-label">Qual a sua área de interesse?</label>
+                      <select class="form-select">
+                        <option selected>Marketing/Comunicação</option>
+                        <option value="pesquisa">Pesquisa e desenvolvimento</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="financeiro">Financeiro</option>
+                      </select>
+                  </div>
+                  <!--Fim - Área de Interresse-->
+  
+                  <!--Início - Informações extras-->
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Adicionar currículo *</label>
+                    <input class="form-control" type="file" id="formFile" required>
+                  </div>
+                  <!--Fim - Informações extras-->
+                  
+                  <!-- Início - Botão de envio-->
+                  <button type="reset" onclick="window.location.href='/confirmcontato.html'" class="btn btn-sucess mb-3">Limpar</button>
+                  <button type="submit" onclick="window.location.href='/confirmcontato.html'" class="btn btn-outline-dark mb-3">Submeter candidatura</button>
+                  <!-- Fim - Botão de envio-->
+  
+                </div>
+                <div class="col-12 col-md-4 img-forms">
+                  <figure class="figure">
+                    <img src="img/equipe/1.png" class="figure-img rounded d-none d-lg-block w-100" style="display: inline-block;" alt="...">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- FIM TRABALHE CONOSCO -->
+            
+        </div>
+    </main>
+    
+      <!--FOOTER -->
+      <footer class="border-top text-light">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-md-4 text-center mb-2">
+              &copy; 2023 - Floreios Ltda <br>
+              Avenida das Flores, 111, Jardim Cuiabá <br>
+              Cuiabá/Mato Grosso <br>
+              CPNJ 99.999.999/0001-99
+            </div>
+            <div class="col-12 col-md-4 text-center mb-2">
+              <a href="https://anevenancio.github.io/floreios/privacidade.html" class="text-decoration-none text-light">
+                Política de Privacidade
+              </a><br>
+              <a href="https://anevenancio.github.io/floreios/termos.html" class="text-decoration-none  text-light">
+                Termos e Condições
+              </a><br>
+              <a href="https://anevenancio.github.io/floreios/trabalheconosco.html" class="text-decoration-none text-light">
+                Trabalhe Conosco
+              </a><br>
+              <a href="https://anevenancio.github.io/floreios/trocas.html" class="text-decoration-none text-light">
+                Trocas e Devoluções
+              </a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="https://anevenancio.github.io/floreios/contato.html" class="text-decoration-none text-light">
+              <i class="bi bi-laptop"></i> Contato pelo Site
+              </a><br>
+              <i class="bi bi-envelope"></i> E-mail: <a href="mailto:oi@floreios.com.br" class="text-decoration-none text-light">oi@floreios.com.br</a><br>
+              <i class="bi bi-whatsapp"></i> Telefone: <a href="phone:28999990000" class="text-decoration-none text-light">(65) 99999-0000</a><br>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-tiktok"></i></a>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--FIM FOOTER -->
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    
+  </body>
 </html>
