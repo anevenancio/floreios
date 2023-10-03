@@ -1,0 +1,380 @@
+head, body, footer{
+    font-family: 'Mooli', sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #fdf2df;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.h1-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b22427;
+    
+}
+
+p{
+    color: #1e2525;
+}
+
+.p-text{
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+    color: #1e2525;
+}
+
+a{
+    color: #fff;
+}
+
+.btn:hover{
+    background: #b22427;
+    color: #fff;
+}
+   
+
+
+/*Logo*/
+
+.nav1{
+    background: #b22427;
+}
+
+.nav2{
+    background: #f9ede8;
+}
+
+.nav3{
+    background: #fdf2df;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* Menu*/
+
+
+.nav-link:hover{
+    text-decoration:overline 2px #b22427;
+}
+
+.dropdown-menu .dropdown-item{
+   text-transform:capitalize;
+   text-decoration: none;
+}
+
+.dropdown-menu li a:hover{
+    background: #fdf2df;
+    color: #b22427
+}
+
+/*Caixa de Busca*/
+
+input::placeholder{
+    font-size: 12px;
+  }
+
+ #pesquisar.btn{
+    background: #000;
+    color: #fff;
+}
+#pesquisar.btn:hover{
+    background: #b22427;
+    transition: 0.5s;
+}
+
+
+.bi-search-heart{
+    color: #fff;
+}
+
+
+
+/* Carrossel*/
+
+.carousel-title{
+    background-color: rgba(178, 36, 39, 0.5);
+    font-weight: bold;
+    color: #f7ede3;
+    padding: 15px;
+    text-transform: uppercase;
+
+}
+
+.carousel-title:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    color: #b22427;
+    padding: 15px;
+    text-transform: uppercase;
+
+}
+
+.c-item {
+    height: 720px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit:cover;
+}
+
+/*Categorias*/
+
+#categoria1 {
+    position:relative;
+    overflow: hidden;
+  }
+#categoria1 > img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+#categoria1:hover img {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#categoria2 {
+    position:relative;
+    overflow: hidden;
+  }
+#categoria2 > img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+#categoria2:hover img {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#categoria3 {
+    position:relative;
+    overflow: hidden;
+  }
+#categoria3 > img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+#categoria3:hover img {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+h2{
+    background: #b22427;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2:hover{
+    background: transparent;
+    color: #b22427;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Produtos*/
+
+.products h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b22427;
+}
+
+.products h5{
+    background: #b22427;
+    color: #fff;
+    padding: 4px;
+}
+
+.products h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-button{
+    text-decoration: none !important;
+    text-transform: lowercase;
+    background: transparent;
+    border: solid 1px #b22427;
+    color: #000;
+    padding: 10px 80px 10px 80px;
+}
+
+.card-button:hover{
+    border: solid 3px #b22427;
+    font-weight: bold;
+}
+
+.card-body{
+    background: #fdf2df !important;
+}
+
+.bi-star-fill,
+.bi-star-half,
+.bi-star{
+    color: #b22427;
+}
+
+.c-produto{
+    width: 150px;
+    height: 150px;
+}
+/* destaque*/
+
+.destaque{
+    width: 100%;
+    background-color: #fcebcf;
+    padding: 120px 0;
+    text-align: center;
+}
+
+
+/*Newsletter*/
+
+.newsletter{
+    width: 100%;
+    background-image: url(/img/background/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.newsletter h1{
+    color: #b22427;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+
+.newsletter form input[type='email']{
+    padding: 18px;
+    width: 360px;
+    border:none;
+    border-radius: 5px;
+    width: 50%;
+    letter-spacing: 1px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.15);
+}
+
+.newsletter form input[type='submit']{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+    display: inline-block;
+    width: 360px;
+    padding: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #B22427;
+    transition: 0.5s;
+    width: 20%;
+    letter-spacing: 1px;
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.15);
+}
+
+.newsletter form input:hover[type='submit']{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+    display: inline-block;
+    width: 360px;
+    padding: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgba(178, 36, 39, 0.5);
+    width: 20%;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #b22427;
+}
+
+
+/*Contato*/
+.forms{
+   padding-top: 6px;
+   background-color: rgba(255, 255, 255, 0.5);
+   color: #b22427;
+   font-weight: bold;
+}
+
+.forms ::placeholder{
+    font-size: 12px;
+}
+
+
+
+/*Produtos Loja*/
+
+.card{
+    border: none;
+    margin-bottom: 10px;
+
+}
+
+.card-body .card-text{
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    border:solid 2px #fdf2df;
+}
+
+.card-body .card-text:hover{
+    color: #1e2525;
+    font-weight: bold;
+    font-size: 25px;
+    border:solid 2px #b22427;
+    transition: 0.5s;
+}
+
+
+
+.card-header{
+    background: #fff;
+    
+}
+
+.h3-title{
+    text-transform: uppercase;
+    color: #b22427;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.breadcrumb a{
+    color: #1e2525;
+}
+
+.breadcrumb a:hover{
+    color: #b22427;
+}
+
+
+/* Formulário Loguin */
+.a-link{
+    color: #b22427;
+    font-weight: bold;
+}

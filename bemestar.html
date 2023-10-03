@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.svg" type="image/x-icon" sizes="16x16"/>
+
+  <title>Floreios | por uma vida mais leve</title>
+</head>
+<body>
+  <div class="d-flex flex-column wrapper">
+    <!--INICIO FRETE-->
+    <nav class="navbar navbar-expand-lg nav1">
+      <div class="container text-center justify-content-center" style="height: 15px;">
+        <div class="row align-items-center">
+          <div class="col" style="font-size: 12px; color: white;">
+            <i class="bi bi-stars me-2"></i>Frete grátis em pedidos acima de R$ 99,90<i class="bi bi-stars ms-2"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIM FRETE-->
+
+    <!--INICIO LOGO-->
+    <nav class="navbar navbar-expand-lg nav2">
+      <div class="container text-center justify-content-center">
+        <div class="row align-items-center">
+          <div class="col my-3">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="img-fluid" alt="logo escrito floreios"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIM LOGO-->
+    
+    <!--MENU-->
+    <nav class="navbar navbar-expand-lg py-2 mb-1 shadow-sm nav3">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  nav-justified  flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://anevenancio.github.io/floreios/quemsomos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="https://anevenancio.github.io/floreios/loja.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Loja
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/bemestar.html">Bem-Estar</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/skincare.html">Skin Care</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/lifestyle.html">Lifestyle</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/loja.html">Ver todos</a></li>
+              </ul>
+            </li>
+            <!--icones-->
+            <li class="nav-item">
+              <a class="nav-link" href="https://anevenancio.github.io/floreios/login.html">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://anevenancio.github.io/floreios/carrinho.html">Carrinho</a>
+            </li>
+            <div>
+              <!--caixa de busca-->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
+                <button class="btn" type="submit" id="pesquisar"><i class="bi bi-search-heart"></i></button>
+              </form>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--FIM MENU-->
+
+    <!--LOJA-->
+    <main class="flex-fill">
+      <div class="container">
+        <div class="mb-5">
+          <img src="img/background/4.png" style="height:400px; width: 100%; object-fit:cover;" class="img-fluid" id="imgCategoria1">
+          <h1 class="text-center mt-5 h1-title"><b>Bem-Estar</b></h1>
+          <h6 class="text-center">Aproveite os benefícios naturais de cada ingrediente cuidadosamente selecionado para ajudar a equilibrar o corpo e a mente.</h6>
+        </div>
+        <hr>
+        <!--INICIO - NAVEGAÇÃO PÁGINAS LOJA-->
+        <div class="row">
+          
+          <div class="col-12 col-md-5">
+            <form class="d-inline-block">
+              <select class="form-select form-select-sm">
+                <option>Ordenar pelo nome</option>
+                <option>Ordenar pelo menor preço</option>
+                <option>Ordenar pelo maior preço</option>
+              </select>
+            </form>
+          </div>
+          
+          <div class="col-12 col-md-7">
+            <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+              <nav class="d-inline-block me-3">
+                <ul class="pagination pagination-sm my-0">
+                  <li class="page-item">
+                    <a class="page-link text-dark" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-dark" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+        <!--FIM - NAVEGAÇÃO PÁGINAS LOJA-->
+
+        <hr>
+
+        <!--INICIO - PRODUTOS-->
+        
+        <div class="row g-3">
+          <!-- produto1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center bg-light">
+              <a class="position-absolute end-0 p-2 text-danger">
+                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;" onclick="favoritarItem(this)"></i>
+              </a>
+              <a href="https://anevenancio.github.io/floreios/item.html">
+                <img src="img/produtos/item1.png" class="card-img-top">
+              </a>
+              
+              <div class="card-header">
+                <h6 class="card-title">Chá Rejuvenecedor</h6><hr style="color: #b22427;">
+                <p class="card-text truncar-3l">  <small>R$ 42,90</small></p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- produto2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center bg-light">
+              <a class="position-absolute end-0 p-2 text-danger">
+                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;" onclick="favoritarItem(this)"></i>
+              </a>
+              <a href="https://anevenancio.github.io/floreios/item2.html">
+                <img src="img/produtos/item2.png" class="card-img-top">
+              </a>
+              <div class="card-header">
+                <h6 class="card-title">Chá Antioxidante </h6><hr style="color: #b22427;">
+                <p class="card-text truncar-3l">  <small>R$ 42,90</small></p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- produto3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center bg-light">
+              <a class="position-absolute end-0 p-2 text-danger">
+                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;" onclick="favoritarItem(this)"></i>
+              </a>
+              <a href="https://anevenancio.github.io/floreios/item3.html">
+                <img src="img/produtos/item3.png" class="card-img-top">
+              </a>
+              <div class="card-header">
+                <h6 class="card-title">Chá Equilíbrio </h6><hr style="color: #b22427;">
+                <p class="card-text truncar-3l">  <small>R$ 42,90</small></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- produto4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center bg-light">
+              <a class="position-absolute end-0 p-2 text-danger">
+                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;" onclick="favoritarItem(this)"></i>
+              </a>
+              <a href="https://anevenancio.github.io/floreios/item4.html">
+                <img src="img/produtos/item4.png" class="card-img-top">
+              </a>
+              
+              <div class="card-header">
+                <h6 class="card-title"> Chá Refrescante</h6><hr style="color: #b22427;">
+                <p class="card-text truncar-3l">  <small>R$ 42,90</small></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- produto9 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center bg-light">
+              <a class="position-absolute end-0 p-2 text-danger">
+                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;" onclick="favoritarItem(this)"></i>
+              </a>
+              <a href="https://anevenancio.github.io/floreios/item9.html">
+                <img src="img/produtos/item9.png" class="card-img-top">
+              </a>
+              
+              <div class="card-header">
+                <h6 class="card-title">Kit Queen Bee</h6><hr style="color: #b22427;">
+                <p class="card-text truncar-3l">  <small>R$ 135,00</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--FIM - PRODUTOS-->
+
+    </main>  
+
+
+    <!--FIM LOJA-->
+
+    <!--FOOTER -->
+    <footer class="border-top text-light">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-12 col-md-4 text-center mb-2">
+            &copy; 2023 - Floreios Ltda <br>
+            Avenida das Flores, 111, Jardim Cuiabá <br>
+            Cuiabá/Mato Grosso <br>
+            CPNJ 99.999.999/0001-99
+          </div>
+          <div class="col-12 col-md-4 text-center mb-2">
+            <a href="https://anevenancio.github.io/floreios/privacidade.html" class="text-decoration-none text-light">
+              Política de Privacidade
+            </a><br>
+            <a href="https://anevenancio.github.io/floreios/termos.html" class="text-decoration-none  text-light">
+              Termos e Condições
+            </a><br>
+            <a href="https://anevenancio.github.io/floreios/trabalheconosco.html" class="text-decoration-none text-light">
+              Trabalhe Conosco
+            </a><br>
+            <a href="https://anevenancio.github.io/floreios/trocas.html" class="text-decoration-none text-light">
+              Trocas e Devoluções
+            </a>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <a href="https://anevenancio.github.io/floreios/contato.html" class="text-decoration-none text-light">
+            <i class="bi bi-laptop"></i> Contato pelo Site
+            </a><br>
+            <i class="bi bi-envelope"></i> E-mail: <a href="mailto:oi@floreios.com.br" class="text-decoration-none text-light">oi@floreios.com.br</a><br>
+            <i class="bi bi-whatsapp"></i> Telefone: <a href="phone:28999990000" class="text-decoration-none text-light">(65) 99999-0000</a><br>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--FIM FOOTER -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="js/index.js"></script>
+
+  
+</body>
+</html>

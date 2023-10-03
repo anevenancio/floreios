@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.svg" type="image/x-icon" sizes="16x16"/>
+
+    <title>Floreios | por uma vida mais leve</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column wrapper">
+      <!--INICIO FRETE-->
+      <nav class="navbar navbar-expand-lg nav1">
+        <div class="container text-center justify-content-center" style="height: 15px;">
+          <div class="row align-items-center">
+            <div class="col" style="font-size: 12px; color: white;">
+              <i class="bi bi-stars me-2"></i>Frete grátis em pedidos acima de R$ 99,90<i class="bi bi-stars ms-2"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--FIM FRETE-->
+
+      <!--INICIO LOGO-->
+      <nav class="navbar navbar-expand-lg nav2">
+        <div class="container text-center justify-content-center">
+          <div class="row align-items-center">
+            <div class="col my-3">
+              <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="img-fluid" alt="logo escrito floreios"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--FIM LOGO-->
+      
+      <!--MENU-->
+      <nav class="navbar navbar-expand-lg py-2 mb-1 shadow-sm nav3">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  nav-justified  flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://anevenancio.github.io/floreios/quemsomos.html">Quem Somos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://anevenancio.github.io/floreios/loja.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Loja
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/bemestar.html">Bem-Estar</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/skincare.html">Skin Care</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/lifestyle.html">Lifestyle</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/loja.html">Ver todos</a></li>
+                </ul>
+              </li>
+              <!--icones-->
+              <li class="nav-item">
+                <a class="nav-link" href="https://anevenancio.github.io/floreios/login.html">Minha Conta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://anevenancio.github.io/floreios/carrinho.html">Carrinho</a>
+              </li>
+              <div>
+                <!--caixa de busca-->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
+                  <button class="btn" type="submit" id="pesquisar"><i class="bi bi-search-heart"></i></button>
+                </form>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--FIM MENU-->
+        
+      <!--CARROSSEL-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="img/carrossel/slide1.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel-title">Self Care Club</h1>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="img/carrossel/slide2.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel-title">Hora do chá</h1>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="img/carrossel/slide3.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel-title">Faça a diferença em grande estilo!</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--FIM CARROSSEL-->
+
+      <!--CATEGORIAS-->
+      <section class="new">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-lg-12">
+              <div class="row text-center">
+                <div class="col-lg-4" id="categoria1">
+                  <img src="img/categorias/1.png" class="img-fluid" alt="" style="width: 400px;">
+                  <a class="link" href="https://anevenancio.github.io/floreios/lifestyle.html"><h2 class="shadow-sm">Lifestyle</h2></a>
+                </div>
+                <div class="col-lg-4" id="categoria2">
+                  <img src="img/categorias/2.png" class="img-fluid" alt="">
+                  <a class="link" href="https://anevenancio.github.io/floreios/bemestar.html"><h2 class="shadow-sm">Bem-Estar</h2></a>
+                </div>
+                <div class="col-lg-4" id="categoria3">
+                  <img src="img/categorias/3.png" class="img-fluid" alt="">
+                  <a class="link" href="https://anevenancio.github.io/floreios/skincare.html"><h2 class="shadow-sm">Skin Care </h2></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM CATEGORIAS-->
+
+      <!--DESTAQUE-->
+      <section class="destaque shadow">
+        <div class="container justify-content-center py-2">
+          <div class="row g-3">
+            <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+              <img src="img/icons/1.png" class="img-fluid" alt=""><br>
+              <h4> Sem Crueldade</h4><br>
+              <p>Todos os nossos produtos são desenvolvidos sem crueldade animal.</p>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+              <img src="img/icons/2.png" class="img-fluid" alt=""><br>
+              <h4> Vegano </h4><br>
+              <p> Nossos produtos são veganos e feitos com ingredientes naturais e orgânicos.
+              </p>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+              <img src="img/icons/3.png" class="img-fluid" alt=""><br>
+              <h4> Sustentável</h4><br>
+              <p>Nosso objetivo é minimizar nosso impacto no meio ambiente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--FIM DESTAQUE-->
+
+
+      <!-- PRODUTOS-->
+
+      <!-- novidades-->
+
+      <section class="products">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-lg-12 m-auto text-center">
+              <h1>Novidades</h1>
+              <h5>para te ajudar em uma rotina mais leve</h5>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img-top">
+                  <img src="img/produtos/item1.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6> Chá Rejuvenecedor </h6>
+                  <p>R$ 42,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img">
+                  <img src="img/produtos/item2.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6> Chá Antioxidante</h6>
+                  <p>R$ 42,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item2.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img">
+                  <img src="img/produtos/item3.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6> Chá Equilíbrio </h6>
+                  <p>R$ 42,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item3.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img">
+                  <img src="img/produtos/item4.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6> Chá Refrescante</h6>
+                  <p>R$ 42,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item4.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- última chance-->
+
+      <section class="products">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-lg-12 m-auto text-center">
+              <h1> Última chance</h1>
+              <h5>aproveite para garantir seus favoritos!</h5>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img-top">
+                  <img src="img/produtos/item5.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6> Kit Self Care Club</h6>
+                  <p>R$ 129,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item5.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img">
+                  <img src="img/produtos/item6.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6>Massageador facial</h6>
+                  <p>R$ 79,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item6.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img">
+                  <img src="img/produtos/item7.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6> Kit Bons Sonhos</h6>
+                  <p>R$ 29,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item7.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-img">
+                  <img src="img/produtos/item8.png" class="col-12 img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h6>Kit Glow</h6>
+                  <p>R$ 39,90</p>
+                  <a class="btn btn-outline-dark" href="https://anevenancio.github.io/floreios/item8.html">saiba mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM PRODUTOS-->
+
+      <!--NEWSLETTER-->
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="title text-center pt-3 pb-5">
+              <h1 class="position-relative d-inline-block ms-4 p-2">Newsletter</h1>
+              <h5 class="text-center" style="color: #fff;"> cadastre seu email e fique por dentro de todas as nossas novidades.</h5>
+              <div class="row g-2">
+                <div class="col-12 col-md-8">
+                  <input type="email" class="form-control" placeholder="Escreva seu e-mail" aria-label="Email">
+                </div>
+                <div class="col-12 col-md-4 btn-submit">
+                  <a href="https://anevenancio.github.io/floreios/mensagem_newsletter.html" type="submit" class="btn btn-danger">Inscreva-se</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--NEWSLETTER-->
+    
+      <!--FOOTER -->
+      <footer class="border-top text-light">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-md-4 text-center mb-2">
+              &copy; 2023 - Floreios Ltda <br>
+              Avenida das Flores, 111, Jardim Cuiabá <br>
+              Cuiabá/Mato Grosso <br>
+              CPNJ 99.999.999/0001-99
+            </div>
+            <div class="col-12 col-md-4 text-center mb-2">
+              <a href="https://anevenancio.github.io/floreios/privacidade.html" class="text-decoration-none text-light">
+                Política de Privacidade
+              </a><br>
+              <a href="https://anevenancio.github.io/floreios/termos.html" class="text-decoration-none  text-light">
+                Termos e Condições
+              </a><br>
+              <a href="https://anevenancio.github.io/floreios/trabalheconosco.html" class="text-decoration-none text-light">
+                Trabalhe Conosco
+              </a><br>
+              <a href="https://anevenancio.github.io/floreios/trocas.html" class="text-decoration-none text-light">
+                Trocas e Devoluções
+              </a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="https://anevenancio.github.io/floreios/contato.html" class="text-decoration-none text-light">
+              <i class="bi bi-laptop"></i> Contato pelo Site
+              </a><br>
+              <i class="bi bi-envelope"></i> E-mail: <a href="mailto:oi@floreios.com.br" class="text-decoration-none text-light">oi@floreios.com.br</a><br>
+              <i class="bi bi-whatsapp"></i> Telefone: <a href="phone:28999990000" class="text-decoration-none text-light">(65) 99999-0000</a><br>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-tiktok"></i></a>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-decoration-none text-light"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--FIM FOOTER -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    
+  </body>
+</html>

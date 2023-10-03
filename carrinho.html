@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.svg" type="image/x-icon" sizes="16x16"/>
+
+  <title>Floreios | por uma vida mais leve</title>
+</head>
+<body>
+  <div class="d-flex flex-column wrapper">
+    <!--INICIO FRETE-->
+    <nav class="navbar navbar-expand-lg nav1">
+      <div class="container text-center justify-content-center" style="height: 15px;">
+        <div class="row align-items-center">
+          <div class="col" style="font-size: 12px; color: white;">
+            <i class="bi bi-stars me-2"></i>Frete grátis em pedidos acima de R$ 99,90<i class="bi bi-stars ms-2"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIM FRETE-->
+
+    <!--INICIO LOGO-->
+    <nav class="navbar navbar-expand-lg nav2">
+      <div class="container text-center justify-content-center">
+        <div class="row align-items-center">
+          <div class="col my-3">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="img-fluid" alt="logo escrito floreios"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIM LOGO-->
+    
+    <!--MENU-->
+    <nav class="navbar navbar-expand-lg py-2 mb-1 shadow-sm nav3">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  nav-justified  flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://anevenancio.github.io/floreios/quemsomos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="https://anevenancio.github.io/floreios/loja.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Loja
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/bemestar.html">Bem-Estar</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/skincare.html">Skin Care</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/lifestyle.html">Lifestyle</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://anevenancio.github.io/floreios/loja.html">Ver todos</a></li>
+              </ul>
+            </li>
+            <!--icones-->
+            <li class="nav-item">
+              <a class="nav-link" href="https://anevenancio.github.io/floreios/login.html">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://anevenancio.github.io/floreios/carrinho.html">Carrinho</a>
+            </li>
+            <div>
+              <!--caixa de busca-->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
+                <button class="btn" type="submit" id="pesquisar"><i class="bi bi-search-heart"></i></button>
+              </form>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--FIM MENU-->
+
+    <main class="flex-fill">
+      <div class="container">
+        <div class="row gx-3">
+          <!--INICIO - DETALHAMENTO - OPÇÃO: PEDIDOS-->
+          <div class="col-12 mt-3">
+            <h2 class="text-center mb-5 mt-5">Carrinho</h2> 
+           
+            <!--INICIO - FORMULÁRIO PEDIDOS-->
+            <div class="accordion" id="divPedidos">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#produtos">
+                    <b>Clique para Selecionar os Produtos</b>
+                  </button>
+                </h2>
+                <div id="produtos" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                  <div class="accordion-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Produto</th>
+                          <th class="text-center">R$ Unit.</th>
+                          <th class="text-center">Qtde.</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Chá Rejuvenecedor</td>
+                          <td class="text-center">42,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Chá Antioxidante</td>
+                          <td class="text-center">42,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Chá Equilíbrio</td>
+                          <td class="text-center">42,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Chá Refrescante</td>
+                          <td class="text-center">42,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Kit Self Care Club</td>
+                          <td class="text-center">129,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Massageador facial</td>
+                          <td class="text-center">79,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Kit Bons Sonhos</td>
+                          <td class="text-center">29,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Kit Glow</td>
+                          <td class="text-center">39,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Kit Queen Bee</td>
+                          <td class="text-center">135,00</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Ecobag Together</td>
+                          <td class="text-center">49,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Ecobag Good Vibes Only</td>
+                          <td class="text-center">49,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                          </td>
+                          <td>Ecobag Be Yourself</td>
+                          <td class="text-center">49,90</td>
+                          <td class="text-center">
+                            <select class="form-select text-center" aria-label="Default select example">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#formaPagamento">
+                    <b>Escolha a forma de Pagamento</b>
+                  </button>
+                </h2>
+                <div id="formaPagamento" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                  <div class="accordion-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Forma de Pagamento</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="exampleCheck1">
+                                PIX
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="exampleCheck1">
+                                Boleto
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="exampleCheck1">
+                                Cartão de Crédito
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="exampleCheck1">
+                              Cartão de Débito
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#endEntrega">
+                    <b>Informe o Endereço de Entrega</b>
+                  </button>
+                </h2>
+                <div id="endEntrega" class="accordion-collapse collapse" data-bs-parent="#divPedidos">
+                  <div class="accordion-body">
+                    <table class="table">
+                      <thead>
+                        <div class="row justify-content-center border">
+                          <form action="">
+                            <div class="row g-2 m-3">
+                              <div class="col-12 col-md-6 form-floating">
+                                <input type="text" class="form-control" placeholder="Cidade" id="cidade" required>
+                                <label class="ms-3" for="cidade">Cidade</label>
+                              </div>
+                              <div class="col-12 col-md-4 form-floating">
+                                <input type="text" class="form-control" placeholder="Estado" id="estado" required>
+                                <label class="ms-3" for="estado">Estado</label>
+                              </div>
+                              <div class="col-12 col-md-2 form-floating">
+                                <input type="text" class="form-control" placeholder="CEP" id="CEP" required>
+                                <label class="ms-3" for="CEP">CEP</label>
+                              </div>
+                              <div class="col-12 col-md-8 form-floating">
+                                <input type="text" class="form-control" placeholder="Logradouro" id="logradouro" required>
+                                <label class="ms-3" for="logradouro">Logradouro</label>
+                              </div>
+                              <div class="col-12 col-md-4 form-floating">
+                                <input type="text" class="form-control" placeholder="Bairro" id="bairro" required>
+                                <label class="ms-3" for="bairro">Bairro</label>
+                              </div>
+                              <div class="col-12 col-md-4 form-floating">
+                                <input type="text" class="form-control" placeholder="numero" id="numeroCasa">
+                                <label class="ms-3" for="numeroCasa">Número</label>
+                              </div>
+                              <div class="col-12 col-md-8 form-floating">
+                                <input type="text" class="form-control" placeholder="Complemento" id="complemento">
+                                <label class="ms-3" for="complemento">Complemento (Opcional)</label>
+                              </div>
+                              <div class="text-end mt-3">
+                                <a href="index.html" class="btn btn-outline-danger">Cancelar</a>
+                                <a href="https://anevenancio.github.io/floreios/pedidoenviado.html" class="btn btn-danger">Enviar pedido</a>
+                              </div>
+                            </div>
+                          </form>
+                      </div>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--FIM - FORMULÁRIO PEDIDOS-->
+          </div>
+          <!--FIM - DETALHAMENTO - OPÇÃO: PEDIDOS-->
+        </div>
+      </div>
+    </main>
+   
+    
+    <!--FOOTER -->
+    <footer class="border-top text-light">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-12 col-md-4 text-center mb-2">
+            &copy; 2023 - Floreios Ltda <br>
+            Avenida das Flores, 111, Jardim Cuiabá <br>
+            Cuiabá/Mato Grosso <br>
+            CPNJ 99.999.999/0001-99
+          </div>
+          <div class="col-12 col-md-4 text-center mb-2">
+            <a href="https://anevenancio.github.io/floreios/privacidade.html" class="text-decoration-none text-light">
+              Política de Privacidade
+            </a><br>
+            <a href="https://anevenancio.github.io/floreios/termos.html" class="text-decoration-none  text-light">
+              Termos e Condições
+            </a><br>
+            <a href="https://anevenancio.github.io/floreios/trabalheconosco.html" class="text-decoration-none text-light">
+              Trabalhe Conosco
+            </a><br>
+            <a href="https://anevenancio.github.io/floreios/trocas.html" class="text-decoration-none text-light">
+              Trocas e Devoluções
+            </a>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <a href="https://anevenancio.github.io/floreios/contato.html" class="text-decoration-none text-light">
+            <i class="bi bi-laptop"></i> Contato pelo Site
+            </a><br>
+            <i class="bi bi-envelope"></i> E-mail: <a href="mailto:oi@floreios.com.br" class="text-decoration-none text-light">oi@floreios.com.br</a><br>
+            <i class="bi bi-whatsapp"></i> Telefone: <a href="phone:28999990000" class="text-decoration-none text-light">(65) 99999-0000</a><br>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="text-decoration-none text-light"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--FIM FOOTER -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+  
+</body>
+</html>
